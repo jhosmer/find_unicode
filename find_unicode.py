@@ -23,7 +23,7 @@ def main():
         # make a flat list of all files
         ## if a dir is given as an arg then take all files in that dir [non-recursive]
         files = [f for f in args if os.path.isfile(f)] + [x for y in
-                 [[f for f in os.listdir(d) if os.path.isfile(f)]
+                 [[os.path.join(d, f) for f in os.listdir(d) if os.path.isfile(os.path.join(d, f))]
                   for d in args if os.path.isdir(d)]
                  for x in y]
         long_fname = max(map(len, files)) + 1
