@@ -9,7 +9,7 @@ import os
 import sys
 
 def help():
-    print 'Usage: {} [file, [file, ..]]'.format(__file__)
+    print 'Usage: {} [file, [dir, [file, ..]]]'.format(__file__)
     print 'Displays line:character position of all non-ascii Unicode character(s) in a file'
 
 def main():
