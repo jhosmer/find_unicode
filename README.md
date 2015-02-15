@@ -8,7 +8,7 @@ Usage:
 Usage: ./find_unicode.py [file, [file, ..]]
 Displays line:character position of all non-ascii Unicode character(s) in a file
 
-[ 15:49 pythonforios@MacBookPro ~/dev/scripts ]$ ./find_unicode.py daemon/trunk/daemon/daemon.py
+[ 15:49 me@yourbase ~/dev/scripts ]$ ./find_unicode.py daemon/trunk/daemon/daemon.py
              File              Line:Col char    (ord)
 --------------------------------------------------------
 daemon/trunk/daemon/daemon.py  008:0013  ©    '\xc2\xa9'
